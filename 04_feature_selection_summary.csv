@@ -1,0 +1,6 @@
+method,raw_columns_after_basic_cleaning,corr_dropped_numeric,selected_nonzero_features_after_ohe,cv_auc_mean,cv_auc_std,test_auc,test_pr_auc
+baseline_logistic (outer CV),95,0,,0.9063764891721486,0.00680913849907253,0.9060906383770705,0.5796548567543466
+corr_filter(|r|>0.9)_logistic (test only),95,14,,,,0.9062983937914144,0.5811416867360025
+corr_filter + ridge_l2 (internal CV),95,14,,0.9070639115375098,,0.9062755724536853,0.5798181345715401
+corr_filter + lasso_l1 (internal CV),95,14,112.0,0.9053993070083228,,0.9042509726764333,0.5723043130060311
+corr_filter + elastic_net (internal CV),95,14,123.0,0.9053344934256286,,0.9042928487233346,0.5724574700870121
